@@ -6,7 +6,7 @@ const pool = new Pool({
   host: 'localhost',
   database: 'bootcampx'
 });
-
+/*
 pool.query(`
 SELECT DISTINCT teachers.name as teacher, cohorts.name as cohort
 FROM teachers
@@ -21,7 +21,7 @@ ORDER BY teacher;
     console.log(`${row.cohort}: ${row.teacher}`);
   })
 });
-
+*/
 const queryString = `
 SELECT DISTINCT teachers.name as teacher, cohorts.name as cohort
 FROM teachers
